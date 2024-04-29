@@ -1,0 +1,108 @@
+body{
+    background-image: url(img/950243.webp);
+    background-size: 2000px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.first{
+    display: block;
+}
+
+.first-input{
+    display: block;
+}
+a{
+    transition: all_.2s ease-in-out;
+}
+
+.header{
+    width: 100%;
+    float: right;
+    background: #fff;
+    box-shadow: 0px 1px 6px #e6e6e6;
+    height: 100px;
+}
+
+.header .logo {
+    float: right;
+    padding: 17px 0;
+}
+
+.header .logo img{
+    max-width: 100px;
+}
+
+/******start menu******/
+.main-menu {
+    float: right;
+
+}
+
+.main-menu > ul > li{
+    float: right;
+    list-style: none;
+    position: relative;
+}
+
+.main-menu ul li a{
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.main-menu ul li a i{
+    margin-right: 5px;
+}
+.main-menu ul li ul{
+    position: absolute;
+    width: 250px;
+    background: #ddd;
+    top: 80px;
+    right: 0;
+    box-shadow: 0px 1px 6px #e6e6e6;
+    opacity: 0;
+    visibility: hidden;
+    transition: all_.2s ease-in-out;
+    z-index: 999;
+}
+.main-menu ul li ul li{
+list-style: none;
+}
+.main-menu ul li ul li a{
+    padding: 8px 15px;
+    display: block;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+}
+.main-menu ul li ul li a:hover {
+    background: #000000;
+    color: #fff;
+}
+.main-menu > ul > li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 35px;
+}
+
+.image--cover{
+    width: 380px;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    filter: brightness(150%);
+}
+
+#loader {
+    animation: animate 1.5s linear infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
